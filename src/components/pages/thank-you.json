@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_pages_thank_yous",
+  "info": {
+    "displayName": "ThankYou"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "text": {
+      "type": "richtext"
+    },
+    "image": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    },
+    "button": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_home_page_sections_input_fields",
+  "info": {
+    "displayName": "inputField"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "placeholder": {
+      "type": "string"
+    }
+  }
+}

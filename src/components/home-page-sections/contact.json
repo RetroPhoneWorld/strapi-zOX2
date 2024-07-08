@@ -1,0 +1,35 @@
+{
+  "collectionName": "components_home_page_sections_contacts",
+  "info": {
+    "displayName": "contact",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "text": {
+      "type": "string"
+    },
+    "inputFields": {
+      "displayName": "inputField",
+      "type": "component",
+      "repeatable": true,
+      "component": "home-page-sections.input-field"
+    },
+    "contactItems": {
+      "displayName": "contactItem",
+      "type": "component",
+      "repeatable": true,
+      "component": "home-page-sections.contact-item"
+    },
+    "title": {
+      "type": "string"
+    },
+    "titleTwo": {
+      "type": "string"
+    },
+    "button": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "collectionName": "components_home_page_sections_foryou_lists",
+  "info": {
+    "displayName": "foryouList"
+  },
+  "options": {},
+  "attributes": {
+    "text": {
+      "type": "string"
+    }
+  }
+}

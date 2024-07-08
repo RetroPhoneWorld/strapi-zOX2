@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_home_page_sections_foryous",
+  "info": {
+    "displayName": "foryou",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "smallTitle": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "items": {
+      "displayName": "foryouList",
+      "type": "component",
+      "repeatable": true,
+      "component": "home-page-sections.foryou-list",
+      "required": true
+    }
+  }
+}

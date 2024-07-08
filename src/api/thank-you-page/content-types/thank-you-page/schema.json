@@ -1,0 +1,20 @@
+{
+  "kind": "singleType",
+  "collectionName": "thank_you_pages",
+  "info": {
+    "singularName": "thank-you-page",
+    "pluralName": "thank-you-pages",
+    "displayName": "ThankYou Page"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "thankYouPage": {
+      "type": "component",
+      "repeatable": false,
+      "component": "pages.thank-you"
+    }
+  }
+}

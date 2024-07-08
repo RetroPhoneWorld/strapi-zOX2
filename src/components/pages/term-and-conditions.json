@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_pages_term_and_conditions",
+  "info": {
+    "displayName": "PageTermAndConditions",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "text": {
+      "type": "richtext"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    }
+  }
+}

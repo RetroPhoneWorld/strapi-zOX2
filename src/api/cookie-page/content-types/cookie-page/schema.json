@@ -1,0 +1,20 @@
+{
+  "kind": "singleType",
+  "collectionName": "cookie_pages",
+  "info": {
+    "singularName": "cookie-page",
+    "pluralName": "cookie-pages",
+    "displayName": "Cookie Page"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "cookiePage": {
+      "type": "component",
+      "repeatable": false,
+      "component": "pages.page-cookie"
+    }
+  }
+}

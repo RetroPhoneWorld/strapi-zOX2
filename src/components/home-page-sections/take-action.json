@@ -1,0 +1,31 @@
+{
+  "collectionName": "components_home_page_sections_take_actions",
+  "info": {
+    "displayName": "TakeAction",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "items": {
+      "displayName": "icon",
+      "type": "component",
+      "repeatable": true,
+      "component": "home-page-sections.icon",
+      "required": true
+    },
+    "images": {
+      "type": "media",
+      "multiple": true,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    }
+  }
+}
