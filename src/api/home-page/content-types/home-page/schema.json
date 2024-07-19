@@ -10,42 +10,81 @@
   "options": {
     "draftAndPublish": true
   },
-  "pluginOptions": {},
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
   "attributes": {
     "hero": {
       "type": "component",
       "repeatable": false,
-      "component": "home-page-sections.hero"
+      "component": "home-page-sections.hero",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "aboutUs": {
       "type": "component",
       "repeatable": false,
-      "component": "home-page-sections.about-us"
+      "component": "home-page-sections.about-us",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "banner": {
       "type": "component",
       "repeatable": false,
-      "component": "home-page-sections.banner-one"
+      "component": "home-page-sections.banner-one",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "takeAction": {
       "type": "component",
       "repeatable": false,
-      "component": "home-page-sections.take-action"
+      "component": "home-page-sections.take-action",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "stories": {
       "type": "component",
       "repeatable": false,
-      "component": "home-page-sections.stories"
+      "component": "home-page-sections.stories",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "forYou": {
       "type": "component",
       "repeatable": false,
-      "component": "home-page-sections.foryou"
+      "component": "home-page-sections.foryou",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "contact": {
       "type": "component",
       "repeatable": false,
-      "component": "home-page-sections.contact"
+      "component": "home-page-sections.contact",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     }
   }
 }

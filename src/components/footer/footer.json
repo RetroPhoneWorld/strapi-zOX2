@@ -1,31 +1,24 @@
 {
   "collectionName": "components_footer_footers",
   "info": {
-    "displayName": "footer"
+    "displayName": "footer",
+    "description": ""
   },
   "options": {},
   "attributes": {
     "logo": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "description": {
       "type": "text"
-    },
-    "copyright": {
-      "type": "text"
-    },
-    "pages": {
-      "displayName": "Pages",
-      "type": "component",
-      "repeatable": true,
-      "component": "footer.pages"
     }
   }
 }

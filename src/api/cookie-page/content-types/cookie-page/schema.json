@@ -4,17 +4,27 @@
   "info": {
     "singularName": "cookie-page",
     "pluralName": "cookie-pages",
-    "displayName": "Cookie Page"
+    "displayName": "Cookie Page",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
   },
-  "pluginOptions": {},
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
   "attributes": {
     "cookiePage": {
       "type": "component",
       "repeatable": false,
-      "component": "pages.page-cookie"
+      "component": "pages.page-cookie",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     }
   }
 }

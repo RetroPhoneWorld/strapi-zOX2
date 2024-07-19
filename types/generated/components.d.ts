@@ -4,12 +4,11 @@ export interface FooterFooter extends Schema.Component {
   collectionName: 'components_footer_footers';
   info: {
     displayName: 'footer';
+    description: '';
   };
   attributes: {
     logo: Attribute.Media;
     description: Attribute.Text;
-    copyright: Attribute.Text;
-    pages: Attribute.Component<'footer.pages', true>;
   };
 }
 

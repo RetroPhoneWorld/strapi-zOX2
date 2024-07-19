@@ -855,12 +855,23 @@ export interface ApiCookiePageCookiePage extends Schema.SingleType {
     singularName: 'cookie-page';
     pluralName: 'cookie-pages';
     displayName: 'Cookie Page';
+    description: '';
   };
   options: {
     draftAndPublish: true;
   };
+  pluginOptions: {
+    i18n: {
+      localized: true;
+    };
+  };
   attributes: {
-    cookiePage: Attribute.Component<'pages.page-cookie'>;
+    cookiePage: Attribute.Component<'pages.page-cookie'> &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -876,6 +887,12 @@ export interface ApiCookiePageCookiePage extends Schema.SingleType {
       'admin::user'
     > &
       Attribute.Private;
+    localizations: Attribute.Relation<
+      'api::cookie-page.cookie-page',
+      'oneToMany',
+      'api::cookie-page.cookie-page'
+    >;
+    locale: Attribute.String;
   };
 }
 
@@ -890,14 +907,54 @@ export interface ApiHomePageHomePage extends Schema.SingleType {
   options: {
     draftAndPublish: true;
   };
+  pluginOptions: {
+    i18n: {
+      localized: true;
+    };
+  };
   attributes: {
-    hero: Attribute.Component<'home-page-sections.hero'>;
-    aboutUs: Attribute.Component<'home-page-sections.about-us'>;
-    banner: Attribute.Component<'home-page-sections.banner-one'>;
-    takeAction: Attribute.Component<'home-page-sections.take-action'>;
-    stories: Attribute.Component<'home-page-sections.stories'>;
-    forYou: Attribute.Component<'home-page-sections.foryou'>;
-    contact: Attribute.Component<'home-page-sections.contact'>;
+    hero: Attribute.Component<'home-page-sections.hero'> &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    aboutUs: Attribute.Component<'home-page-sections.about-us'> &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    banner: Attribute.Component<'home-page-sections.banner-one'> &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    takeAction: Attribute.Component<'home-page-sections.take-action'> &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    stories: Attribute.Component<'home-page-sections.stories'> &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    forYou: Attribute.Component<'home-page-sections.foryou'> &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    contact: Attribute.Component<'home-page-sections.contact'> &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -913,6 +970,12 @@ export interface ApiHomePageHomePage extends Schema.SingleType {
       'admin::user'
     > &
       Attribute.Private;
+    localizations: Attribute.Relation<
+      'api::home-page.home-page',
+      'oneToMany',
+      'api::home-page.home-page'
+    >;
+    locale: Attribute.String;
   };
 }
 
@@ -927,8 +990,18 @@ export interface ApiPrivacyPolicyPrivacyPolicy extends Schema.SingleType {
   options: {
     draftAndPublish: true;
   };
+  pluginOptions: {
+    i18n: {
+      localized: true;
+    };
+  };
   attributes: {
-    privacyPolicy: Attribute.Component<'pages.page-privacy'>;
+    privacyPolicy: Attribute.Component<'pages.page-privacy'> &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -944,6 +1017,12 @@ export interface ApiPrivacyPolicyPrivacyPolicy extends Schema.SingleType {
       'admin::user'
     > &
       Attribute.Private;
+    localizations: Attribute.Relation<
+      'api::privacy-policy.privacy-policy',
+      'oneToMany',
+      'api::privacy-policy.privacy-policy'
+    >;
+    locale: Attribute.String;
   };
 }
 
@@ -954,12 +1033,23 @@ export interface ApiTermsAndConditionsPageTermsAndConditionsPage
     singularName: 'terms-and-conditions-page';
     pluralName: 'terms-and-conditions-pages';
     displayName: 'TermsAndConditions Page';
+    description: '';
   };
   options: {
     draftAndPublish: true;
   };
+  pluginOptions: {
+    i18n: {
+      localized: true;
+    };
+  };
   attributes: {
-    termsAndConditions: Attribute.Component<'pages.term-and-conditions'>;
+    termsAndConditions: Attribute.Component<'pages.term-and-conditions'> &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -975,6 +1065,12 @@ export interface ApiTermsAndConditionsPageTermsAndConditionsPage
       'admin::user'
     > &
       Attribute.Private;
+    localizations: Attribute.Relation<
+      'api::terms-and-conditions-page.terms-and-conditions-page',
+      'oneToMany',
+      'api::terms-and-conditions-page.terms-and-conditions-page'
+    >;
+    locale: Attribute.String;
   };
 }
 
@@ -984,12 +1080,23 @@ export interface ApiThankYouPageThankYouPage extends Schema.SingleType {
     singularName: 'thank-you-page';
     pluralName: 'thank-you-pages';
     displayName: 'ThankYou Page';
+    description: '';
   };
   options: {
     draftAndPublish: true;
   };
+  pluginOptions: {
+    i18n: {
+      localized: true;
+    };
+  };
   attributes: {
-    thankYouPage: Attribute.Component<'pages.thank-you'>;
+    thankYouPage: Attribute.Component<'pages.thank-you'> &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -1005,6 +1112,12 @@ export interface ApiThankYouPageThankYouPage extends Schema.SingleType {
       'admin::user'
     > &
       Attribute.Private;
+    localizations: Attribute.Relation<
+      'api::thank-you-page.thank-you-page',
+      'oneToMany',
+      'api::thank-you-page.thank-you-page'
+    >;
+    locale: Attribute.String;
   };
 }
 

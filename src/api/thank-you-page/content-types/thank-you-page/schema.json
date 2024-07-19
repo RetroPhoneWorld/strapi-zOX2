@@ -4,17 +4,27 @@
   "info": {
     "singularName": "thank-you-page",
     "pluralName": "thank-you-pages",
-    "displayName": "ThankYou Page"
+    "displayName": "ThankYou Page",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
   },
-  "pluginOptions": {},
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
   "attributes": {
     "thankYouPage": {
       "type": "component",
       "repeatable": false,
-      "component": "pages.thank-you"
+      "component": "pages.thank-you",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     }
   }
 }
