@@ -1,7 +1,8 @@
 {
   "collectionName": "components_pages_page_cookies",
   "info": {
-    "displayName": "PageCookie"
+    "displayName": "PageCookie",
+    "description": ""
   },
   "options": {},
   "attributes": {
@@ -14,12 +15,12 @@
       "required": true
     },
     "image": {
-      "allowedTypes": [
-        "images"
-      ],
       "type": "media",
       "multiple": false,
-      "required": true
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
     }
   }
 }

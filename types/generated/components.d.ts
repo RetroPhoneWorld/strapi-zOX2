@@ -199,6 +199,7 @@ export interface PagesPageCookie extends Schema.Component {
   collectionName: 'components_pages_page_cookies';
   info: {
     displayName: 'PageCookie';
+    description: '';
   };
   attributes: {
     title: Attribute.String & Attribute.Required;
