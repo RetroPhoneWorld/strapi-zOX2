@@ -221,6 +221,42 @@ export interface PagesPagePrivacy extends Schema.Component {
   };
 }
 
+export interface PagesSupportPage extends Schema.Component {
+  collectionName: 'components_pages_support_pages';
+  info: {
+    displayName: 'SupportPage';
+  };
+  attributes: {
+    support: Attribute.Component<'pages.support'>;
+  };
+}
+
+export interface PagesSupport extends Schema.Component {
+  collectionName: 'components_pages_supports';
+  info: {
+    displayName: 'support';
+    description: '';
+  };
+  attributes: {
+    image: Attribute.Media & Attribute.Required;
+    card: Attribute.Component<'pages.supprt-card', true>;
+    description: Attribute.Text;
+    title: Attribute.String;
+  };
+}
+
+export interface PagesSupprtCard extends Schema.Component {
+  collectionName: 'components_pages_supprt_cards';
+  info: {
+    displayName: 'supprt-card';
+    description: '';
+  };
+  attributes: {
+    title: Attribute.String & Attribute.Required;
+    description: Attribute.RichText & Attribute.Required;
+  };
+}
+
 export interface PagesTermAndConditions extends Schema.Component {
   collectionName: 'components_pages_term_and_conditions';
   info: {
@@ -319,6 +355,9 @@ declare module '@strapi/types' {
       'navbar.navbar': NavbarNavbar;
       'pages.page-cookie': PagesPageCookie;
       'pages.page-privacy': PagesPagePrivacy;
+      'pages.support-page': PagesSupportPage;
+      'pages.support': PagesSupport;
+      'pages.supprt-card': PagesSupprtCard;
       'pages.term-and-conditions': PagesTermAndConditions;
       'pages.thank-you': PagesThankYou;
       'shared.meta-social': SharedMetaSocial;

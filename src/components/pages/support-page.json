@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_pages_support_pages",
+  "info": {
+    "displayName": "SupportPage"
+  },
+  "options": {},
+  "attributes": {
+    "support": {
+      "displayName": "support",
+      "type": "component",
+      "repeatable": false,
+      "component": "pages.support"
+    }
+  }
+}

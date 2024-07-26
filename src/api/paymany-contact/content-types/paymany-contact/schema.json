@@ -1,0 +1,46 @@
+{
+  "kind": "collectionType",
+  "collectionName": "paymany_contacts",
+  "info": {
+    "singularName": "paymany-contact",
+    "pluralName": "paymany-contacts",
+    "displayName": "PaymentContact",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "firstName": {
+      "type": "string"
+    },
+    "lastName": {
+      "type": "string"
+    },
+    "email": {
+      "type": "string"
+    },
+    "phone": {
+      "type": "string"
+    },
+    "country": {
+      "type": "string"
+    },
+    "county": {
+      "type": "string"
+    },
+    "address": {
+      "type": "string"
+    },
+    "message": {
+      "type": "text"
+    },
+    "zipCode": {
+      "type": "integer"
+    },
+    "amount": {
+      "type": "integer"
+    }
+  }
+}

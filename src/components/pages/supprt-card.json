@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_pages_supprt_cards",
+  "info": {
+    "displayName": "supprt-card",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "richtext",
+      "required": true
+    }
+  }
+}

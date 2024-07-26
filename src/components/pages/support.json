@@ -1,0 +1,33 @@
+{
+  "collectionName": "components_pages_supports",
+  "info": {
+    "displayName": "support",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "card": {
+      "displayName": "supprt-card",
+      "type": "component",
+      "repeatable": true,
+      "component": "pages.supprt-card"
+    },
+    "description": {
+      "type": "text"
+    },
+    "title": {
+      "type": "string"
+    }
+  }
+}

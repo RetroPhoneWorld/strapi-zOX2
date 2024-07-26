@@ -991,6 +991,46 @@ export interface ApiHomePageHomePage extends Schema.SingleType {
   };
 }
 
+export interface ApiPaymanyContactPaymanyContact extends Schema.CollectionType {
+  collectionName: 'paymany_contacts';
+  info: {
+    singularName: 'paymany-contact';
+    pluralName: 'paymany-contacts';
+    displayName: 'PaymentContact';
+    description: '';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    firstName: Attribute.String;
+    lastName: Attribute.String;
+    email: Attribute.String;
+    phone: Attribute.String;
+    country: Attribute.String;
+    county: Attribute.String;
+    address: Attribute.String;
+    message: Attribute.Text;
+    zipCode: Attribute.Integer;
+    amount: Attribute.Integer;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::paymany-contact.paymany-contact',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::paymany-contact.paymany-contact',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
 export interface ApiPrivacyPolicyPrivacyPolicy extends Schema.SingleType {
   collectionName: 'privacy_policies';
   info: {
@@ -1039,6 +1079,53 @@ export interface ApiPrivacyPolicyPrivacyPolicy extends Schema.SingleType {
       'api::privacy-policy.privacy-policy',
       'oneToMany',
       'api::privacy-policy.privacy-policy'
+    >;
+    locale: Attribute.String;
+  };
+}
+
+export interface ApiSupportPageSupportPage extends Schema.SingleType {
+  collectionName: 'support_pages';
+  info: {
+    singularName: 'support-page';
+    pluralName: 'support-pages';
+    displayName: 'Support Page';
+    description: '';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  pluginOptions: {
+    i18n: {
+      localized: true;
+    };
+  };
+  attributes: {
+    support: Attribute.Component<'pages.support'> &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::support-page.support-page',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::support-page.support-page',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    localizations: Attribute.Relation<
+      'api::support-page.support-page',
+      'oneToMany',
+      'api::support-page.support-page'
     >;
     locale: Attribute.String;
   };
@@ -1173,7 +1260,9 @@ declare module '@strapi/types' {
       'api::contact.contact': ApiContactContact;
       'api::cookie-page.cookie-page': ApiCookiePageCookiePage;
       'api::home-page.home-page': ApiHomePageHomePage;
+      'api::paymany-contact.paymany-contact': ApiPaymanyContactPaymanyContact;
       'api::privacy-policy.privacy-policy': ApiPrivacyPolicyPrivacyPolicy;
+      'api::support-page.support-page': ApiSupportPageSupportPage;
       'api::terms-and-conditions-page.terms-and-conditions-page': ApiTermsAndConditionsPageTermsAndConditionsPage;
       'api::thank-you-page.thank-you-page': ApiThankYouPageThankYouPage;
     }
